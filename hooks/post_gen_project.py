@@ -25,9 +25,7 @@ if __name__=='__main__':
 
   # Iniciar ambiente virtual
   subprocess.call(['py', '-m', 'venv', 'venv'])
-  #print('ambiente creado')
-  #print('ambiente creado')
-  
+
   # activo ell entorno virtual creado
   subprocess.call('venv\\Scripts\\activate.bat')
 
