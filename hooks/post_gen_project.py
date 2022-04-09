@@ -3,6 +3,7 @@ import subprocess
 
 # Variables
 project_slug= "{{ cookiecutter.project_slug }}"
+project_github= "{{ cookiecutter.project_github }}"
 MESSAGE_COLOR = "\x1b[34m"
 RESET_ALL = "\x1b[0m"
 
@@ -18,9 +19,9 @@ if __name__=='__main__':
   subprocess.call(['git', 'add', '*'])
   subprocess.call(['git', 'commit', '-m', 'Init commit'])
 
-  # # Agrega el repo remoto y realiza el primer commit
-  # subprocess.call(['git', 'remote', 'add', 'origin', project_github])
-  # subprocess.call(['git', 'push', 'origin', 'master'])
+  # Agrega el repo remoto y realiza el primer commit
+  subprocess.call(['git', 'remote', 'add', 'origin', project_github])
+  subprocess.call(['git', 'push', 'origin', 'master'])
 
   # Iniciar ambiente virtual
   subprocess.call(['py', '-m', 'venv', 'venv'])
