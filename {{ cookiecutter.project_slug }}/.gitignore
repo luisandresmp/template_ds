@@ -137,5 +137,5 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# Exclude data from source control by default
-/data/
+# files csv
+.csv
