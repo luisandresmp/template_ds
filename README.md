@@ -19,15 +19,14 @@ pip install cookiecutter
 
 ## Create a new Project
 
-En el directorio en el que quieras guardar tu proyecto generado:
-The path in you want save your generate project:
+In the directory where you want to save your generated project:
 
 ```bash
 cookiecutter https://github.com/luisandresmp/template_ds
 ```
 
 
-## Estructura de directorios y archivos resultantes
+## Structure of directories and resulting files
 
     {{ cookiecutter.project_slug }}
         ├── data
@@ -35,11 +34,9 @@ cookiecutter https://github.com/luisandresmp/template_ds
         │   └── raw            <- The original, immutable data dump.
         │
         ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-        │                         the creator's initials, and a short `-` delimited description, e.g.
-        │                         `1.0-jvelezmagic-initial-data-exploration`.
+        │                         the creator's initials, and a short `-` delimited description.
         ├── main
-        │   ├── main.py        <- The final, canonical data sets for modeling.
-        │   └── log.txt            <- The original, immutable data dump.
+        │   └── main.py        <- process .py.
         │
         ├── .gitignore         <- Files to ignore by `git`.
         │
