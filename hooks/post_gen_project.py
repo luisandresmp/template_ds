@@ -2,7 +2,7 @@ import os
 import subprocess
 
 # Variables
-project_github= "{{ cookiecutter.project_github }}"
+project_slug= "{{ cookiecutter.project_slug }}"
 MESSAGE_COLOR = "\x1b[34m"
 RESET_ALL = "\x1b[0m"
 
@@ -28,7 +28,7 @@ if __name__=='__main__':
   #print('ambiente creado')
   
   # activo ell entorno virtual creado
-  #subprocess.call(['venv\Scripts\activate'])
+  subprocess.call([project_slug,'\venv\Scripts\activate'])
   #print('activado')
   
   # python del entorno virtual
@@ -36,8 +36,11 @@ if __name__=='__main__':
   
   #print(python_venv)
 
-  #subprocess.call(['py', '-m', 'pip', '--upgrade', 'pip'])
-  #subprocess.call(['py', '-m', 'pip', 'install', '-r', 'requirements.txt'])
+  subprocess.call(['py', '-m', 'pip', '--upgrade', 'pip'])
+  subprocess.call(['py', '-m', 'pip', 'install', '-r', 'requirements.txt'])
+  
+  subprocess.call(['deactivate'])
+  
 
   print(f"{MESSAGE_COLOR}The beginning of your destiny is defined now! Create and have fun!{RESET_ALL}")
 
