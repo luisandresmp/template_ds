@@ -24,20 +24,20 @@ if __name__=='__main__':
 
   # Iniciar ambiente virtual
   subprocess.call(['py', '-m', 'venv', 'venv'])
-  print('ambiente creado')
-  print('ambiente creado')
+  #print('ambiente creado')
+  #print('ambiente creado')
   
   # activo ell entorno virtual creado
-  subprocess.call(['venv\Scripts\activate'])
-  print('activado')
+  #subprocess.call(['venv\Scripts\activate'])
+  #print('activado')
   
   # python del entorno virtual
-  python_venv =  os.getcwd()+"\\venv\\Scripts\\python.exe"
+  #python_venv =  os.getcwd()+"\\venv\\Scripts\\python.exe"
   
-  print(python_venv)
+  #print(python_venv)
 
-  subprocess.call(['py', '-m', 'pip', '--upgrade', 'pip'])
-  subprocess.call(['py', '-m', 'pip', 'install', '-r', 'requirements.txt'])
+  #subprocess.call(['py', '-m', 'pip', '--upgrade', 'pip'])
+  #subprocess.call(['py', '-m', 'pip', 'install', '-r', 'requirements.txt'])
 
   print(f"{MESSAGE_COLOR}The beginning of your destiny is defined now! Create and have fun!{RESET_ALL}")
 
