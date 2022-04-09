@@ -25,9 +25,10 @@ if __name__=='__main__':
   # Iniciar ambiente virtual
   subprocess.call(['py', '-m', 'venv', 'venv'])
   print('ambiente creado')
+  print('ambiente creado')
   
   # activo ell entorno virtual creado
-  subprocess.call(['cd', 'venv\Scripts\activate'])
+  subprocess.call(['venv\Scripts\activate'])
   print('activado')
   
   # python del entorno virtual
