@@ -31,7 +31,7 @@ if __name__=='__main__':
   subprocess.call('venv\\Scripts\\activate.bat')
 
   #instalo requirements
-  subprocess.call(['py', '-m', 'pip', 'install', '-r', 'requirements.txt'])
+  subprocess.call([python_venv, '-m', 'pip', 'install', '-r', 'requirements.txt'])
   
   #desactivo entorno virtual
   subprocess.call(['venv\\Scripts\\deactivate.bat'])
