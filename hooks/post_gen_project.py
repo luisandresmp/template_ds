@@ -19,21 +19,24 @@ if __name__=='__main__':
   subprocess.call(['git', 'commit', '-m', 'Initial commit'])
 
     # Agrega el repo remoto y realiza el primer commit
-  subprocess.call(['git', 'remote', 'add', 'origin', project_github])
-  #subprocess.call(['git', 'pull', 'origin', 'master'])
-  subprocess.call(['git', 'push', 'origin', 'master'])
+  #subprocess.call(['git', 'remote', 'add', 'origin', project_github])
+  #subprocess.call(['git', 'push', 'origin', 'master'])
 
   # Iniciar ambiente virtual
   subprocess.call(['py', '-m', 'venv', 'venv'])
-
+  print('ambiente creado')
+  
   # activo ell entorno virtual creado
   subprocess.call(['cd', 'venv\Scripts\activate'])
-
+  print('activado')
+  
   # python del entorno virtual
   python_venv =  os.getcwd()+"\\venv\\Scripts\\python.exe"
+  
+  print(python_venv)
 
-  subprocess.call([python_venv,'-m', 'pip', '--upgrade', 'pip'])
-  subprocess.call([python_venv,'-m', 'pip', 'install', '-r', 'requirements.txt'])
+  subprocess.call(['py', '-m', 'pip', '--upgrade', 'pip'])
+  subprocess.call(['py', '-m', 'pip', 'install', '-r', 'requirements.txt'])
 
   print(f"{MESSAGE_COLOR}The beginning of your destiny is defined now! Create and have fun!{RESET_ALL}")
 
