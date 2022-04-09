@@ -20,8 +20,8 @@ if __name__=='__main__':
 
     # Agrega el repo remoto y realiza el primer commit
   subprocess.call(['git', 'remote', 'add', 'origin', project_github])
-  subprocess.call(['git', 'pull', 'origin', 'main'])
-  subprocess.call(['git', 'push', 'origin', 'main'])
+  #subprocess.call(['git', 'pull', 'origin', 'master'])
+  subprocess.call(['git', 'push', 'origin', 'master'])
 
   # Iniciar ambiente virtual
   subprocess.call(['py', '-m', 'venv', 'venv'])
