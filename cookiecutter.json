@@ -1,0 +1,15 @@
+{
+    "project_title": "Cookiecutter DS",
+    "project_slug": "{{ cookiecutter.project_title.lower().replace(' ', '_') }}",
+    "project_description": "Something cool",
+    "project_author_name": "Your name",
+    "project_author_email": "Your email",
+    "project_packages": ["All", "Data Analyst", "Data engineering", "Machine Learning", "Artificial Intelligence", "Minimal"],
+    "project_github": "Your remote repository",
+    "project_python_version": "3.9",
+    "project_version": "0.1.0"
+}
+
+
+
+
