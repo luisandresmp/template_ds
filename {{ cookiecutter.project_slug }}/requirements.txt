@@ -1,33 +1,20 @@
-# name: {{ cookiecutter.project_slug }}
-
+# Project name: {{ cookiecutter.project_slug }}
+# python={{cookiecutter.project_python_version}}
 {% if cookiecutter.project_packages == 'All' -%}
 pandas
-
 {% endif -%}
-
 {% if cookiecutter.project_packages == 'Data Analyst' -%}
 pandas
-
 {% endif -%}
-
 {% if cookiecutter.project_packages == 'Data engineering' -%}
 pandas
-
 {% endif -%}
-
 {% if cookiecutter.project_packages == 'Machine Learning' -%}
 pandas
-
 {% endif -%}
-
 {% if cookiecutter.project_packages == 'Artificial Intelligence' -%}
 pandas
-
 {% endif -%}
-
 {% if cookiecutter.project_packages == 'Minimal' -%}
 pandas
-
 {% endif -%}
-
-# python={{cookiecutter.project_python_version}}
