@@ -27,7 +27,7 @@ if __name__=='__main__':
   subprocess.call(['py', '-m', 'venv', 'venv'])
 
   # activo ell entorno virtual creado
-  subprocess.call('venv\Scripts\activate')
+  subprocess.call(['cd', 'venv\Scripts\activate'])
 
   # python del entorno virtual
   python_venv =  os.getcwd()+"\\venv\\Scripts\\python.exe"
